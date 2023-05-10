@@ -64,33 +64,20 @@ body {
 }
 
 .carousel-wrapper {
-    display: table;
-    table-layout: fixed;
-    height: 100vh;
-    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-.carousel-left {
-    display: table-cell;
-    float: none;
-    height: 100%;
-    width: 33.33333%;
-    right: 33.33333333%;
-}
-
-.carousel-middle {
-    display: table-cell;
-    float: none;
-    height: 100%;
-    width: 33.33333%;
-    left: 33.33333333%;
-}
-
-.carousel-right {
-    display: table-cell;
-    float: none;
-    height: 100%;
-    width: 33.33333%;
+.carousel-item {
+    background: tomato;
+    width: 490px;
+    height: 500px;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .brands-wrapper {
