@@ -9,3 +9,103 @@
 		</div>
 	</body>
 </html>
+<body>
+	<div class="navbar-wrapper">
+		<div class="navbar-products navbar-flex">
+			<a class="navbar-text" href="#men">Men</a>
+			<a class="navbar-text" href="#women">Women</a>
+			<a class="navbar-text" href="#brands">Brands</a>
+		</div>
+		<div class="navbar-logo navbar-flex">
+			<a href="#home"><img src="images\logo_invert.png"></a>
+		</div>
+		<div class="navbar-contact navbar-flex">
+			<a class="navbar-text" href="#contact">Contact Us</a>
+			<a class="navbar-text" href="#about">About Us</a>
+			<a class="navbar-text" href="#stores">Our Locations</a>
+		</div>
+	</div>
+	<body>
+		<div class="navbar-wrapper">
+            <div class="navbar-products navbar-flex">
+                <a class="navbar-text" href="#men">Men</a>
+                <a class="navbar-text" href="#women">Women</a>
+                <a class="navbar-text" href="#brands">Brands</a>
+            </div>
+            <div class="navbar-logo navbar-flex">
+                <a href="#home"><img src="images\logo_invert.png"></a>
+            </div>
+            <div class="navbar-contact navbar-flex">
+                <a class="navbar-text" href="#contact">Contact Us</a>
+                <a class="navbar-text" href="#about">About Us</a>
+                <a class="navbar-text" href="#stores">Our Locations</a>
+            </div>
+		</div>
+		<div class="dropdown">
+            <button class="dropdown-button-left">Men</button>
+            <div class="dropdown-content-1">
+                <a rel="noopener" target="_blank" href="https://static.wikia.nocookie.net/godmodes/images/9/96/Thunder_Cross_Split_Attack.png/revision/latest?cb=20200414163540">Link 1</a>
+                <a rel="noopener" target="_blank" href="https://static.wikia.nocookie.net/godmodes/images/9/96/Thunder_Cross_Split_Attack.png/revision/latest?cb=20200414163540">Link 2</a>
+                <a rel="noopener" target="_blank" href="https://static.wikia.nocookie.net/godmodes/images/9/96/Thunder_Cross_Split_Attack.png/revision/latest?cb=20200414163540">Link 3</a>
+                <a rel="noopener" target="_blank" href="https://static.wikia.nocookie.net/godmodes/images/9/96/Thunder_Cross_Split_Attack.png/revision/latest?cb=20200414163540">Link 4</a>
+                <a rel="noopener" target="_blank" href="https://static.wikia.nocookie.net/godmodes/images/9/96/Thunder_Cross_Split_Attack.png/revision/latest?cb=20200414163540">Link 5</a>
+                <a rel="noopener" target="_blank" href="https://static.wikia.nocookie.net/godmodes/images/9/96/Thunder_Cross_Split_Attack.png/revision/latest?cb=20200414163540">Link 6</a>
+            </div>
+            <button class="dropdown-button-left">Women</button>
+            <div class="dropdown-content">
+
+            </div>
+            <button class="dropdown-button-left">Brands</button>
+            <div class="dropdown-content">
+
+            </div>
+            <button class="dropdown-button-right">Our Locations</button>
+            <div class="dropdown-content">
+
+            </div>
+            <button class="dropdown-button-right">About Us</button>
+            <div class="dropdown-content">
+
+            </div>
+            <button class="dropdown-button-right">Contact Us</button>
+            <div class="dropdown-content">
+
+            </div>
+        </div>
+
+		.dropdown {
+			display: inline-block;
+			position: relative;
+			width: 100%;
+		}
+		
+		.dropdown-button-left {
+			float: left;
+			font-size: 17px;
+			background-color: transparent;
+			border: none;
+			outline: none;
+		}
+		
+		.dropdown-button-right {
+			float: right;
+			font-size: 17px;
+			background-color: transparent;
+			border: none;
+			outline: none;
+		}
+		
+		.dropdown-content-1 {
+			display: none;
+			position: fixed;
+			overflow: auto;
+		}
+		
+		.dropdown-content-1 a {
+			text-decoration: none;
+			color: rgb(0, 0, 0);
+		}
+		
+		.dropdown:hover .dropdown-content-1 {
+			display: block;
+		}
