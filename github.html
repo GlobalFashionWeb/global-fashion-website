@@ -109,3 +109,137 @@
 		.dropdown:hover .dropdown-content-1 {
 			display: block;
 		}
+		mix-blend-mode: difference;
+		filter: sepia(5)   
+				saturate(100) 
+				invert(1)     
+				grayscale(1) 
+				contrast(10);
+
+				<nav role="navigation" class="dropdown">
+					<ul>
+						<li><a href="#">Men &dtrif;</a>
+							<ul>
+								<li><a href="#">Link 1</a></li>
+								<li><a href="#">Link 2</a></li>
+								<li><a href="#">Link 3</a></li>
+								<li><a href="#">Link 4</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Women &dtrif;</a>
+							<ul>
+								<li><a href="#">Link 5</a></li>
+								<li><a href="#">Link 6</a></li>
+								<li><a href="#">Link 7</a></li>
+								<li><a href="#">Link 8</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Brands &dtrif;</a>
+							<ul>
+								<li><a href="#">Link 9</a></li>
+								<li><a href="#">Link 10</a></li>
+								<li><a href="#">Link 11</a></li>
+								<li><a href="#">Link 12</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Contact Us &dtrif;</a>
+							<ul>
+								<li><a href="#">Link 13</a></li>
+								<li><a href="#">Link 14</a></li>
+								<li><a href="#">Link 15</a></li>
+								<li><a href="#">Link 16</a></li>
+							</ul>
+						</li>
+						<li><a href="#">About Us &dtrif;</a>
+							<ul>
+								<li><a href="#">Link 17</a></li>
+								<li><a href="#">Link 18</a></li>
+								<li><a href="#">Link 19</a></li>
+								<li><a href="#">Link 20</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Our Locations &dtrif;</a>
+							<ul>
+								<li><a href="#">Link 21</a></li>
+								<li><a href="#">Link 22</a></li>
+								<li><a href="#">Link 23</a></li>
+								<li><a href="#">Link 24</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+				nav {
+					&.dropdown {
+					  display: flex;
+					  font-size: 16px;
+				
+					ul li {
+					  list-style: none;
+					  display: inline-block;
+					  padding: 0 30px;
+					  position: relative;
+					  text-decoration: none;
+					  text-align: center;
+					  font-family: arvo;
+					}
+				
+					li a {
+					  color: black;
+					}
+				
+					li a:hover {
+					  color: #00ff00;
+					  border-bottom: #0095ff;
+					}
+				
+					li:hover {
+					  cursor: pointer;
+					}
+				
+					ul li ul {
+					  visibility: hidden;
+					  opacity: 0;
+					  position: absolute;
+					  padding-left: 0;
+					  left: 0;
+					  display: none;
+					  background: rgb(255, 0, 0);
+					}
+				
+					ul li:hover > ul,
+					ul li ul:hover {
+					  visibility: visible;
+					  opacity: 1;
+					  display: block;
+					  width: 100vw;
+					  text-align: left;
+					  padding-top: 20px;
+					  box-shadow: 0px 3px 5px -1px #ff0000;
+					}
+				
+					ul li ul li {
+					  clear: both;
+					  width: 100%;
+					  text-align: left;
+					  margin-bottom: 20px;
+					  border-style: none;
+					}
+				
+					ul li ul li a:hover {
+					  padding-left: 10px;
+					  border-left: 2px solid #3ca0e7;
+					  transition: all 1s ease;
+					}
+				  }
+				}
+				
+				a {
+					text-decoration: none;
+					&:hover {
+						color: #3CA0E7;
+					}
+				}
+				ul li ul li a {
+				  transition: all 0.5s ease; 
+				}
