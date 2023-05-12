@@ -13,23 +13,193 @@ body {
   width: 100%;
 }
 
-.navbar-title {
+.menu-wrapper {
   display: flex;
   flex-direction: column;
   order: 3;
   flex-grow: 2;
   flex-basis: 0;
-  background-color: azure;
 }
 
-.navbar-title p {
+.menu-item-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu-wrapper p {
   display: flex;
   padding: 0;
   margin: 0 auto;
-  font-size: 35px;
+  font-size: 40px;
+  font-family: "Brush Script MT";
+}
+
+.menu-item button {
+  display: flex;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
   font-family: "Founders-Grotesk", monospace, sans-serif;
-  justify-content: center;
-  align-self: center;
+  border: none;
+  background: none;
+  font-size: 17px;
+  padding: 0 20px 10px 20px;
+  cursor: pointer;
+}
+
+.submenu-wrapper {
+  display: none;
+}
+
+.submenu-1 {
+  display: flex;
+  opacity: 0%;
+  height: 0;
+  flex-direction: column;
+  width: 100vw;
+  margin-left: -40rem;
+  position: absolute;
+  background-color: white;
+  transition-property: opacity, height;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.submenu-1 a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  padding: 10px 0 10px 20px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.menu-1:hover .submenu-1 {
+  display: flex;
+  opacity: 100%;
+  height: 20rem;
+  flex-direction: column;
+  width: 100vw;
+  margin-left: -40rem;
+  position: absolute;
+  background-color: white;
+  transition-property: opacity, height;
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+  box-shadow: 20px 20px 20px 26px rgb(255, 255, 255), -20px 20px 20px 26px rgb(255, 255, 255);
+}
+
+.submenu-2 {
+  display: flex;
+  opacity: 0%;
+  height: 0;
+  flex-direction: column;
+  width: 100vw;
+  position: absolute;
+  background-color: white;
+  transition-property: opacity, height;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.submenu-2 a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  padding: 10px 0 10px 20px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.menu-2:hover .submenu-2 {
+  display: flex;
+  opacity: 100%;
+  height: 20rem;
+  flex-direction: column;
+  width: 100vw;
+  margin-left: -44.27rem;
+  position: absolute;
+  background-color: white;
+  transition-property: opacity, height;
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+  box-shadow: 20px 20px 20px 26px rgb(255, 255, 255), -20px 20px 20px 26px rgb(255, 255, 255);
+}
+
+.submenu-3 {
+  display: flex;
+  opacity: 0%;
+  height: 0;
+  flex-direction: column;
+  width: 100%;
+  margin-left: -40rem;
+  position: absolute;
+  background-color: white;
+  transition-property: opacity, height;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.submenu-3 a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  padding: 10px 0 10px 20px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.menu-3:hover .submenu-3 {
+  display: flex;
+  opacity: 100%;
+  height: 20rem;
+  flex-direction: column;
+  width: 100%;
+  margin-left: -49.66rem;
+  position: absolute;
+  background-color: white;
+  transition-property: opacity, height;
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+  box-shadow: 20px 20px 20px 26px rgb(255, 255, 255), -20px 20px 20px 26px rgb(255, 255, 255);
+}
+
+.submenu-4 {
+  display: flex;
+  opacity: 0%;
+  height: 0;
+  flex-direction: column;
+  width: 100%;
+  margin-left: -40rem;
+  position: absolute;
+  background-color: white;
+  transition-property: opacity, height;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.submenu-4 a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  padding: 10px 0 10px 20px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.menu-4:hover .submenu-4 {
+  display: flex;
+  opacity: 100%;
+  height: 30rem;
+  flex-direction: column;
+  width: 100%;
+  margin-left: -55.6rem;
+  position: absolute;
+  background-color: white;
+  transition-property: opacity, height;
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+  box-shadow: 20px 20px 20px 26px rgb(255, 255, 255), -20px 20px 20px 26px rgb(255, 255, 255);
 }
 
 .navbar-icons {
@@ -40,7 +210,6 @@ body {
   order: 3;
   justify-content: right;
   padding: 5px 5px 0 0;
-  background-color: rgb(214, 255, 255);
 }
 
 .navbar-icons img {
@@ -58,7 +227,6 @@ body {
   order: 1;
   justify-content: left;
   padding-left: 20px;
-  background-color: rgb(143, 255, 255);
 }
 
 .navbar-logo img {
@@ -66,58 +234,6 @@ body {
   width: 50px;
   height: auto;
   object-fit: contain;
-}
-
-.navbar-menu {
-  display: flex;
-  justify-content: center;
-}
-
-.navbar-menu ul {
-  display: flex;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  font-family: "Founders-Grotesk", monospace, sans-serif;
-  background: none;
-  font-size: 17px;
-  cursor: pointer;
-  list-style: none;
-}
-
-.navbar-menu ul li {
-  padding: 0 20px 0 20px;
-}
-
-.sub-menu-1 {
-  display: none;
-}
-
-.sub-menu-2 {
-  display: none;
-}
-
-.menu-1:hover {
-  background-color: rgb(0, 191, 255);
-}
-
-.menu-1:hover .sub-menu-1 {
-  display: block;
-  position: fixed;
-  background-color: black;
-  min-height: 600px;
-  width: 100%;
-  z-index: 9;
-  margin: 0 auto;
-}
-
-.menu-2:hover .sub-menu-2 {
-  display: block;
-  position: fixed;
-  background-color: black;
-  min-height: 600px;
-  width: 100%;
-  z-index: 9;
-  margin: 0 auto;
 }
 
 .video-wrapper {
@@ -159,6 +275,7 @@ body {
     overflow: hidden;
     flex-grow: 1;
     align-items: center;
+    flex-basis: 0;
 }
 
 .brands-wrapper {
