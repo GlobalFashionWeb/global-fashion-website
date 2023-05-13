@@ -1,12 +1,12 @@
 body {
-    background-color: beige;
+    background-color: red;
     padding: 0; 
     margin: 0;
 }
 
 .video-wrapper {
     position: absolute;
-    top: 150px;
+    top: 12%;
     width: 100%;
     height: 800px;
     object-fit: cover;
@@ -33,6 +33,7 @@ body {
     padding: 0;
     margin: 0;
     z-index: 1;
+    min-height: 300px;
 }
 
 .carousel-item {
@@ -47,34 +48,75 @@ body {
 }
 
 .brands-wrapper {
-    position: relative;
-    top: 950px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    overflow: hidden;
+  position: relative;
+  top: 950px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
 }
 
 .brand {
-    object-fit: cover;
-    width: 100vw;
-    height: auto;
-    max-height: 58vh;
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+  max-height: 550px;
+  position: relative;
+  overflow: hidden;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 10;
+}
+
+
+.see-more-button {
+  position: absolute;
+  z-index: 10;
+  margin-top: 490px;
+  padding: 10px 20px 10px 20px;
+  background: white;
+  border: none;
+  color: black;
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  opacity: 70%;
+}
+
+.see-more-button a {
+  opacity: 10%;
+  text-decoration: none;
+  color: black;
 }
 
 .brand img {
-    width: 100vw;
+  width: 100%;
 }
 
 .footer-wrapper {
-    position: relative;
-    top: 950px;
-    min-height: 200px;
-    width: 100%;
+  position: relative;
+  top: 950px;
+  min-height: 600px;
+  width: 100%;
+  z-index: 5;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 600px;
+  width: 100%;
+  z-index: 8;
+  background-color: rgb(0, 0, 0);
+}
+
+.footer-text {
+  color: white;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .header-wrapper {
@@ -99,9 +141,16 @@ body {
   display: flex;
   flex-grow: 1;
   flex-basis: 0;
-  background-color: aqua;
+  background-color: white;
   width: 100%;
   order: 1;
+}
+
+.languages {
+  display: flex;
+  align-self: center;
+  padding-left: 20px;
+  font-size: 13px;
 }
 
 .top-header-wrapper-right {
@@ -109,7 +158,7 @@ body {
   flex-grow: 1;
   flex-basis: 0;
   flex-direction: row-reverse;
-  background-color: antiquewhite;
+  background-color: white;
   width: 100%;
   order: 3;
   justify-content: right;
@@ -129,18 +178,19 @@ body {
   display: flex;
   flex-grow: 1;
   flex-basis: 0;
-  background-color: rgb(0, 255, 170);
+  background-color: white;
   width: 100%;
   order: 2;
   justify-content: center;
 }
 
-.top-header-wrapper-middle p {
+.handwritten {
+  font-family: "Great Vibes";
   color: black;
   font-size: 40px;
-  font-family: "Brush Script MT";
   padding: 0;
   margin: 0;
+  padding-top: 10px;
 }
 
 .bottom-header-wrapper {
@@ -149,37 +199,33 @@ body {
   flex-direction: row;
   order: 2;
   flex-basis: 0;
-  background-color: blue;
+  background-color: white;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
 .dropbtn {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 10px 15px 10px 15px;
   border: none;
   background: none;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   margin: 0;
-  background-color: red;
+  background-color: white;
   display: flex;
   flex-grow: 1;
   flex-basis: 0;
   justify-content: center;
-  font-size: 16px;
-}
-
-.dropbtn:hover {
-  background-color: black;
+  font-size: 18px;
+  font-family: 'PT Sans Narrow', monospace;
 }
 
 .dropdown-1 {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: rgb(0, 0, 0);
+  background-color: white;
   order: 2;
   flex-grow: 1;
   flex-basis: 0;
@@ -189,7 +235,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: rgb(66, 66, 66);
+  background-color: white;
   order: 3;
   flex-grow: 1;
   flex-basis: 0;
@@ -199,7 +245,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: rgb(105, 105, 105);
+  background-color: white;
   order: 4;
   flex-grow: 1;
   flex-basis: 0;
@@ -209,7 +255,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: rgb(168, 168, 168);
+  background-color: white;
   order: 5;
   flex-grow: 1;
   flex-basis: 0;
@@ -219,7 +265,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: rgb(214, 214, 214);
+  background-color: white;
   order: 6;
   flex-grow: 1;
   flex-basis: 0;
@@ -229,7 +275,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   order: 7;
   flex-grow: 1;
   flex-basis: 0;
@@ -239,7 +285,7 @@ body {
   display: flex;
   opacity: 0%;
   height: 0;
-  background-color: red;
+  background-color: white;
   width: 100%;
   z-index: 60;
   left: 0;
@@ -264,7 +310,7 @@ body {
   display: flex;
   opacity: 0%;
   height: 0;
-  background-color: red;
+  background-color: white;
   width: 100%;
   z-index: 60;
   left: 0;
@@ -289,7 +335,7 @@ body {
   display: flex;
   opacity: 0%;
   height: 0;
-  background-color: red;
+  background-color: white;
   width: 100%;
   z-index: 60;
   left: 0;
@@ -314,7 +360,7 @@ body {
   display: flex;
   opacity: 0%;
   height: 0;
-  background-color: red;
+  background-color: white;
   width: 100%;
   z-index: 60;
   left: 0;
@@ -339,9 +385,9 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: rgb(66, 32, 32);
+  background-color: white;
   order: 1;
-  flex-grow: 4;
+  flex-grow: 2;
   flex-basis: 0;
 }
 
@@ -349,8 +395,8 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: rgb(66, 32, 32);
+  background-color: white;
   order: 8;
-  flex-grow: 4;
+  flex-grow: 2;
   flex-basis: 0;
 }
