@@ -5,13 +5,13 @@ body {
 }
 
 .video-wrapper {
-  position: absolute;
-  top: 12%;
+  position: relative;
+  top: 10.5%;
   width: 100%;
   height: 800px;
   object-fit: cover;
   overflow: hidden;
-  z-index: 4;
+  z-index: 10;
 }
 
 .index-video {
@@ -23,90 +23,218 @@ body {
 
 .carousel-wrapper {
   position: relative;
-  top: 950px;
+  top: 10.5%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  list-style: none;
   width: 100%;
-  overflow: hidden;
   padding: 0;
   margin: 0;
-  z-index: 1;
-  min-height: 300px;
+  z-index: 10;
+  min-height: 600px;
 }
 
 .carousel-item {
-  background: tomato;
-  width: 400px;
-  height: 800px;
-  object-fit: cover;
-  overflow: hidden;
+  height: 700px;
   flex-grow: 1;
-  align-items: center;
   flex-basis: 0;
+  display: flex;
 }
 
-.brands-wrapper {
-  position: relative;
-  top: 950px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  overflow: hidden;
+.carousel-left {
+  background-color: aqua;
 }
 
-.brand {
-  display: flex;
-  object-fit: cover;
-  width: 100%;
-  max-height: 550px;
+.carousel-middle {
+  background-color: aquamarine;
   position: relative;
-  overflow: hidden;
-  align-items: flex-start;
+  display: flex;
   justify-content: center;
-  z-index: 10;
 }
 
 .see-more-button {
+  display: flex;
+  z-index: 10;
+  position: absolute;
+  background-color: rgb(158, 158, 158);
+  opacity: 70%;
+  background: white;
+  color: black;
+  font-size: 14px;
+  padding: 15px 15px 15px 15px;
+  border-radius: 20px;
+  -webkit-transition: opacity 200ms ease;
+  -ms-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  align-self: flex-end;
+  margin-bottom: 25px;
+}
+
+.collection-button {
+  font-size: 16px;
+  border-radius: 0;
+}
+
+.see-more-button:hover {
+  opacity: 100%;
+  -webkit-transition: opacity 200ms ease;
+  -ms-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+}
+
+.carousel-middle img {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-middle button {
   position: absolute;
   z-index: 10;
-  margin-top: 490px;
+  margin-top: 540px;
+  margin-left: 110px;
   padding: 10px 20px 10px 20px;
   background: white;
   border: none;
   color: black;
   font-size: 10px;
   cursor: pointer;
-  border-radius: 20px;
   opacity: 70%;
+  -webkit-transition: opacity 200ms ease;
+  -ms-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  border-radius: 5px;
 }
 
-.see-more-button a {
-  opacity: 10%;
-  text-decoration: none;
-  color: black;
+.carousel-middle button:hover {
+  opacity: 100%;
+  -webkit-transition: opacity 200ms ease;
+  -ms-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+}
+
+.carousel-right {
+  background-color: beige;
+}
+
+.brands-wrapper {
+  position: relative;
+  top: 10.5%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.brand {
+  display: flex;
+  width: 100%;
+  height: 550px;
+  position: relative;
+  justify-content: center;
+  z-index: 10;
 }
 
 .brand img {
+  object-fit: cover;
+  display: flex;
   width: 100%;
+  height: 550px;
 }
 
 .footer-wrapper {
   position: relative;
-  top: 950px;
-  min-height: 600px;
+  top: 10.5%;
+  min-height: 700px;
   width: 100%;
+  z-index: 5;
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 600px;
+  min-height: 700px;
   width: 100%;
-  z-index: 5;
+  z-index: 6;
   background-color: rgb(0, 0, 0);
+}
+
+.footer-item {
+  display: flex;
+  flex-basis: 0;
+  flex-direction: column;
+  z-index: 7;
+}
+
+.footer-top {
+  display: flex;
+  flex-grow: 1;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-form-title {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+}
+
+.footer-input-field {
+  display: flex;
+  padding-top: 10px;
+}
+
+.footer-input-field button {
+  background: none;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-left: none;
+  border-radius: 0;
+  background: none;
+  cursor: pointer;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: white;
+  -webkit-transition: background-color 200ms ease;
+  -ms-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+}
+
+.footer-input-field button:hover {
+  background-color: grey;
+  -webkit-transition: background-color 200ms ease;
+  -ms-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+}
+
+.form-control {
+  width: 600px;
+  height: 30px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: none;
+  border-radius: 0;
+  background: none;
+  padding-left: 10px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 80%;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-grow: 2;
+  flex-direction: row;
+  background-color: aquamarine;
 }
 
 ::-webkit-scrollbar {
@@ -116,7 +244,7 @@ body {
 .header-wrapper {
   display: flex;
   flex-direction: column;
-  z-index: 50;
+  z-index: 15;
   position: fixed;
   width: 100%;
   min-height: 100px;
@@ -144,7 +272,8 @@ body {
   display: flex;
   align-self: center;
   padding-left: 20px;
-  font-size: 13px;
+  font-size: 12px;
+  font-family: "GTEsti", sans-serif;
 }
 
 .top-header-wrapper-right {
@@ -202,8 +331,12 @@ body {
 .dropbtn {
   padding: 10px 15px 10px 15px;
   border: none;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  -webkit-transition: border-bottom 200ms ease;
+  -ms-transition: border-bottom 200ms ease;
+  transition: border-bottom 200ms ease;
   background: none;
-  color: rgb(0, 0, 0);
+  color: rgb(82, 82, 82);
   cursor: pointer;
   margin: 0;
   background-color: white;
@@ -211,8 +344,20 @@ body {
   flex-grow: 1;
   flex-basis: 0;
   justify-content: center;
-  font-size: 18px;
-  font-family: "PT Sans Narrow", monospace;
+  font-size: 13px;
+  font-family: "GTEsti", sans-serif;
+  font-weight: 600;
+  -webkit-transition: border-bottom 200ms ease, color 200ms ease;
+  -ms-transition: border-bottom 200ms ease, color 200ms ease;
+  transition: border-bottom 200ms ease, color 200ms ease;
+}
+
+.dropbtn:hover {
+  border-bottom: 3px solid aqua;
+  -webkit-transition: border-bottom 200ms ease, color 200ms ease;
+  -ms-transition: border-bottom 200ms ease, color 200ms ease;
+  transition: border-bottom 200ms ease, color 200ms ease;
+  color: black;
 }
 
 .dropdown-1 {
@@ -281,7 +426,7 @@ body {
   height: 0;
   background-color: white;
   width: 100%;
-  z-index: 60;
+  z-index: 15;
   left: 0;
   top: 100%;
   position: absolute;
@@ -306,7 +451,7 @@ body {
   height: 0;
   background-color: white;
   width: 100%;
-  z-index: 60;
+  z-index: 15;
   left: 0;
   top: 100%;
   position: absolute;
@@ -331,7 +476,7 @@ body {
   height: 0;
   background-color: white;
   width: 100%;
-  z-index: 60;
+  z-index: 15;
   left: 0;
   top: 100%;
   position: absolute;
@@ -356,7 +501,7 @@ body {
   height: 0;
   background-color: white;
   width: 100%;
-  z-index: 60;
+  z-index: 15;
   left: 0;
   top: 100%;
   position: absolute;
