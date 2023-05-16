@@ -39,7 +39,41 @@ body {
 }
 
 .carousel-left {
-  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+}
+
+.left-carousel-title {
+  display: flex;
+  padding-top: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 24px;
+  font-family: 'GTEsti', sans-serif;
+}
+
+.left-carousel-text {
+  background-color: white;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  font-family: 'GTEsti', sans-serif;
+}
+
+.carousel-btn {
+  position: absolute;
+  margin-top: 270px;
+  margin-left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  font-family: 'GTEsti', sans-serif;
 }
 
 .carousel-middle {
@@ -177,10 +211,6 @@ body {
   height: 400px;
 }
 
-.active {
-  background-color: #717171;
-}
-
 .mySlides img {
   vertical-align: middle;
 }
@@ -309,6 +339,70 @@ body {
   background-color: aquamarine;
 }
 
+.footer-nav-item {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.first-nav {
+  background-color: black;
+}
+
+.second-nav {
+  background-color: black;
+}
+
+.third-nav {
+  background-color: black;
+}
+
+.fourth-nav {
+  background-color: black;
+}
+
+.footer-nav-text {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  flex-grow: 1;
+  margin: 30px;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: left;
+  align-items: center;
+}
+
+.content-title {
+  font-family: 'GTEsti', sans-serif;
+  font-size: 18px;
+  border-bottom: 1px solid white;
+  font-weight: 600;
+}
+
+.content {
+  color: white;
+  font-size: 14px;
+  font-family: 'GTEsti', sans-serif;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.footer-icons a img {
+  display: flex;
+  object-fit: contain;
+  width: 25px;
+  padding-right: 10px;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -425,7 +519,7 @@ body {
 }
 
 .dropbtn:hover {
-  border-bottom: 3px solid aqua;
+  border-bottom: 3px solid rgb(0, 0, 0);
   -webkit-transition: border-bottom 200ms ease, color 200ms ease;
   -ms-transition: border-bottom 200ms ease, color 200ms ease;
   transition: border-bottom 200ms ease, color 200ms ease;
